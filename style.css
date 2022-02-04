@@ -1,4 +1,2 @@
-h1 {color: darkcyan; text-align: center;}
-
-.background-image{background-image: SingleCup.jpg;}
-.center{text-align: center; color: darkcyan;}
+body {background-color: cadetblue;}
+h1,h2 {text-align: center; color: whitesmoke;}
