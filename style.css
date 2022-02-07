@@ -1,2 +1,56 @@
-body {background-color: cadetblue;}
-h1,h2 {text-align: center; color: whitesmoke;}
+* {
+    box-sizing: border-box;
+  } 
+  @media screen and (max-width: 600px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
+/* Style the top navigation bar */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 14px 16px;
+    overflow: hidden;
+    background-color: transparent;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+   } 
+li {
+    float: right;
+    border-left: 1px solid transparent;
+   } 
+li a {
+    display: block;
+    color: #005580;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+     }
+li a:hover {
+    background-color: transparent;
+    }
+.active {
+    background-color: transparent;
+    }
+h1 {
+    text-align: center; color:whitesmoke;
+    text-decoration-style: solid;
+    }
+.sub-welcome {
+    text-align: center; color:whitesmoke;
+    }
+.welcome
+{
+background-image: url("images/Rooftop/Rooftop1.jpeg");
+background-color: transparent;
+background-size: 100%;
+background-position: center;
+background-repeat: no-repeat;
+padding-top: 100px;
+padding-right: 30px;
+padding-bottom: 100px;
+padding-left: 80px;
+}
