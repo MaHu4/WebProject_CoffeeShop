@@ -11,10 +11,9 @@
     position: sticky;
     top: 0;
    }
-  }
-./* Style the topnav right */
+/* Style the topnav right */
 .topnav a {
-    float: left;
+    float: right;
     border-left: 1px solid transparent;
     display: block;
     color: #005580;
