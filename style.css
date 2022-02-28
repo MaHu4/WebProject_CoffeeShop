@@ -5,26 +5,77 @@
   background-size:cover;
   position:relative;
 }
+body {
+  font-size: 100%;
+  font-family: 'Syne', sans-serif;
+}
 /* text css above welcome image*/
-.welcome_title {
-  font-size: 4.5rem;
+#nad-logo {
+  font-family: 'Syne Mono', monospace;
+  font-size: 3em;
+  font-weight: bolder;
+  color: white;
+  font-style: normal;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  line-height: 1.0;
 }
-.welcome_desc {
-  font-size: 2rem;
+.welcome-title {
+  font-family: 'Syne Mono', monospace;
+  font-size: 8em;
+  font-weight: bolder;
+  color: white;
+  font-style: normal;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
+
 .welcome-text {
   text-align: center;
   position: absolute;
+  opacity: 1.0;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: darkblue;
+  color: white;
+  font-style: normal;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.welcome-subtext {
+  font-size: 2rem;
 }
 
-.navbar-text {
-color: white;
+
+#navbarSupportedContent {
+  text-decoration: none;
+  color: white;
 }
 
+.nav-link {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+a:link {
+  text-decoration: none;
+  color: whitesmoke;
+}
+a:hover {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+a:visited {
+  text-decoration: none;
+  color: whitesmoke;
+}
+a:active {
+  text-decoration: none;
+  color: whitesmoke;
+}
 
 
 
