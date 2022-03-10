@@ -32,12 +32,7 @@ h1 {
 
   /* navbar */
 
-.navbar-toggler-icon {
-    color: white;
-    background-color: #005580;
- }
-
-.navbar-brand {
+.navbar-light .navbar-brand {
   font-family:'Special Elite', cursive;
   font-size: 2em;
   font-weight: bolder;
@@ -48,16 +43,15 @@ h1 {
   padding-left: 20px;
 }
 
-
-
 #navbarSupportedContent {
   text-decoration: none;
   color:  #005580;
   padding-top: 20px;
   padding-right: 20px;
 }
-.navbar-toggler .icon-bar {
-  background-color: black;
+
+.navbar-toggler {
+  border: 1px solid #005580;
 }
 
 .nav-link {
@@ -65,7 +59,6 @@ h1 {
   text-decoration: none;
   border-left: 1px solid #005580;
 }
-
 
 .nav-link:hover, :visited {
   text-decoration: none;
@@ -77,6 +70,6 @@ h1 {
   text-decoration-line: underline;
 }
 
-
-
-
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 85, 128, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
