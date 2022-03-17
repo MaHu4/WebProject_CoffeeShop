@@ -2,6 +2,7 @@
 
 .bgimage {
   background: url('/Users/marenhuser/Frauenloop/Coffee_Shop_Project/images/SingleCup.jpg');
+  background-color:#e1caad;
   height:100vh;
   background-size:cover;
   background-position:center;
@@ -36,40 +37,77 @@ h1 {
   font-family:'Special Elite', cursive;
   font-size: 2em;
   font-weight: bolder;
-  color: #005580;
+  color: whitesmoke; /*vorher #005580*/
   font-style: normal;
   line-height: 1.0;
   padding-top: 20px;
   padding-left: 20px;
 }
-
 #navbarSupportedContent {
   text-decoration: none;
-  color:  #005580;
+  color:  whitesmoke;  /*vorher #005580*/
   padding-top: 20px;
   padding-right: 20px;
 }
-
 .navbar-toggler {
-  border: 1px solid #005580;
+  border: 1px solid whitesmoke;  /*vorher #005580*/
 }
+
+.bg-light {
+  --bs-bg-opacity: 1;
+  background-color: #005580 !important;
+  -webkit-mask-image: linear-gradient(black, transparent); /*hinzu*/
+  mask-image: linear-gradient(black, transparent); /*hinzu*/
+}
+
+/*.bg-light.collapsed { 
+  background-color: #005580 !important;
+}*/
 
 .nav-link {
-  color:  #005580;
+  color:  whitesmoke;  /*vorher #005580*/
   text-decoration: none;
-  border-left: 1px solid #005580;
+  border-left: 1px solid whitesmoke;  /*vorher #005580*/
 }
-
 .nav-link:hover, :visited {
   text-decoration: none;
   color: inherit;
   text-decoration-line: underline;
 }
-
 .active {
   text-decoration-line: underline;
 }
-
-.navbar-light .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 85, 128, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  
+.navbar-light .navbar-nav .nav-link {
+  color: whitesmoke;  /*vorher #005580*/
 }
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 85, 128, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-light .navbar-toggler { 
+  border: 1.5px solid rgba(0, 85, 128, .7);
+  color: rgba(0,85, 128,.55);
+}
+
+//Collapsed styles
+  .navbar-toggle {
+    border-color: #005580;
+
+      &:hover, &:focus {
+        background-color: #490D40;
+      }
+
+
+
+      .icon-bar {
+        color: #005580;
+        background-color: #005580;
+
+      }
+  }
+  .navbar-collapse.collapse.in ul {
+    background-color: #005580;
+  }
+    
+} //end .navbar-default
+
