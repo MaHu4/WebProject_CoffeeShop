@@ -1,3 +1,270 @@
+*
+.bg-image {
+  background-color: #e1caad;
+  background: url('/Users/marenhuser/Frauenloop/Coffee_Shop_Project/images/SingleCup.jpg') no-repeat center center;
+  background-size: cover;
+  height: 570px;
+  margin-top: -20px;
+}
+  
+.heading { /*to be added?*/
+     color: #005580;
+     text-align: center;
+     padding-top: 200px;
+} 
+
+p { /*to be added?*/
+    text-align: center;
+    padding: 20px 60px;
+}
+     
+/*.btn {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 10px;
+  font-size: 1.2em;
+}*/
+      /*
+.btn:hover {
+      color: #C57ED3;
+      border-color: #C57ED3;
+}*/
+
+.navbar {
+  height: 80px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  z-index: 100;
+  transition: background-color 1s ease 0s;
+}
+
+.navbar-default .navbar-brand {
+     margin-top: 10px;
+     color: white;
+}
+
+.navbar-brand:hover {
+         color: #C57ED3;
+         border: 1px solid #C57ED3;
+} 
+   
+   
+.navbar-nav>li> a {
+        color: white;
+        margin: 10px 5px 5px 5px;
+        
+}
+.navbar-nav> a:hover > a:active > a:focus {
+        color: #C57ED3;
+        border: 1px solid #C57ED3;
+      }
+
+.navbar-nav> a:visited {
+        color: #C57ED3;
+        text-decoration: none;
+      } /*end li*/
+
+
+.navbar-nav .active> a > a:hover > a:focus {
+        background-color: transparent;
+        color: #C57ED3;
+      }
+
+      /*end .navbar-nav*/
+
+/*Collapsed styles*/
+.navbar-toggle {
+  border-color: #C57ED3;
+}
+
+.navbar-toggle, .navbar:focus {
+      background-color: #490D40;
+    }
+
+.navbar-toggle .icon-bar {
+  color: #C57ED3;
+  background-color: #C57ED3;
+}
+
+.navbar-collapse.collapse.in ul {
+  background-color: #490D40;
+}
+    
+/*end .navbar-default*/
+/* Solid class attached on scroll past first section */
+
+.navbar.solid {
+  background-color: #490D40;
+  transition: background-color 1s ease 0s;
+  box-shadow: 0 0 4px grey;
+
+}
+
+.navbar-brand {
+    color: #C57ED3;
+      transition: color 1s ease 0s;
+    }
+
+.navbar-brand  .navbar-nav > li > a {
+            color: #C57ED3;
+            transition: color 1s ease 0s;
+          }
+ /*end li*/
+/*end .navbar-nav*/
+
+
+.about {
+   background-color: #C57ED3;
+   color: #490D40;
+   height: 600px;
+   text-align: center;
+   margin-top: -20px;
+}
+
+h2 {
+  padding-top: 220px;
+}
+
+p {
+      padding: 20px 80px;
+   }
+
+
+
+
+
+/* welcome background image */
+
+/*.bgimage {
+  background: url('/Users/marenhuser/Frauenloop/Coffee_Shop_Project/images/SingleCup.jpg');
+  background-color:#e1caad;
+  height:100vh;
+  background-size:cover;
+  background-position:center;
+  background-repeat: no-repeat;
+  -webkit-mask-image: linear-gradient(black, transparent);
+  mask-image: linear-gradient(black, transparent);
+}*/
+
+
+body {
+  font-family: 'Merriweather', serif;
+  font-size: 18px;
+  color: #005580;
+}
+
+h1 {
+  font-family: 'Special Elite', cursive;
+  font-size: 3em;
+  font-weight: bolder;
+  /*color: #005580;*/
+  font-style: normal;
+  color: #005580;
+  text-shadow: -1px -1px 0 whitesmoke; 
+}
+.welcome-text {
+  text-align: center;
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+  /* navbar */
+
+.navbar-light .navbar-brand {
+  font-family:'Special Elite', cursive;
+  font-size: 2em;
+  font-weight: bolder;
+  color: whitesmoke; /*vorher #005580*/
+  font-style: normal;
+  line-height: 1.0;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+#navbarSupportedContent {
+  text-decoration: none;
+  color:  whitesmoke;  /*vorher #005580*/
+  text-shadow: 1px 1px 1px #005580;
+  padding-top: 20px;
+  padding-right: 20px;
+}
+.navbar-toggler {
+  border: 1px solid whitesmoke;  /*vorher #005580*/
+}
+
+.bg-light {
+  --bs-bg-opacity: 1;
+  background-color: #005580 !important;
+  -webkit-mask-image: linear-gradient(black, transparent); /*hinzu*/
+  mask-image: linear-gradient(black, transparent); /*hinzu*/
+}
+
+/*.bg-light.collapsed { 
+  background-color: #005580 !important;
+}*/
+
+.nav-link {
+  color:  whitesmoke;  /*vorher #005580*/
+  text-decoration: none;
+  border-left: 1px solid whitesmoke;  /*vorher #005580*/
+}
+.nav-link:hover, :visited {
+  text-decoration: none;
+  color: inherit;
+  text-decoration-line: underline;
+}
+.active {
+  text-decoration-line: underline;
+}
+  
+.navbar-light .navbar-nav .nav-link {
+  color: whitesmoke;  /*vorher #005580*/
+}
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 85, 128, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-light .navbar-toggler { 
+  border: 1.5px solid rgba(0, 85, 128, .7);
+  color: rgba(0,85, 128,.55);
+}
+
+//Collapsed styles
+  .navbar-toggle {
+    border-color: #005580;
+
+      &:hover, &:focus {
+        background-color: #490D40;
+      }
+
+
+
+      .icon-bar {
+        color: #005580;
+        background-color: #005580;
+
+      }
+  }
+  .navbar-collapse.collapse.in ul {
+    background-color: #005580;
+  }
+    
+} //end .navbar-default
+
+
+
+
+
+
+
+
+
+
+
+
 /*box-sizing: border-box;
 }
 /* Style the top navigation bar */
