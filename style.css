@@ -41,24 +41,27 @@ h1 {
   mask-image: linear-gradient(black, transparent);*/
   transition: background-color 1s ease 0s; /* ? */ 
   height: 150px;
- padding: 20px;
+  padding: 10px;
+  margin: 10px;
 }  
 .navbar-light .navbar-brand {
   font-family:'Special Elite', cursive;
   font-size: 2.5em;
   font-weight: bolder;
   color: whitesmoke !important;
+  text-shadow: 2px 2px 5px whitesmoke !important;
   font-style: normal;
   line-height: 1.0;
-  padding: 20px;
-  margin: 20px;
+  padding: 10px;
+  margin: 10px;
   text-decoration: none;
 }
 .active {
-  color:  #005580;
-  background-color: whitesmoke;
-  border: 1px solid #005580;
+  color:  whitesmoke;
+  background-color: #005580;
+  border: 1px solid whitesmoke;
   border-width: 1px 1px;
+  box-shadow: 1px 1px 1px 1px whitesmoke;
 }
 .navbar-light .navbar-nav .nav-link {
   color:  whitesmoke !important;
@@ -93,6 +96,7 @@ border: 1px solid whitesmoke;
 .navbar-collapse {
   background-color: #005580;
 }
+
 
 
 
