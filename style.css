@@ -1,3 +1,4 @@
+
 /* welcome background image */
 
 .bg-image {
@@ -96,6 +97,15 @@ border: 1px solid whitesmoke;
 .navbar-collapse {
   background-color: #005580;
 }
+
+#footer {
+  align-items: center;
+  background-color: #005580;
+  color: whitesmoke;
+  height: 100px;
+}
+
+
 
 
 
