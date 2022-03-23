@@ -98,31 +98,28 @@ border: 1px solid white;
   background-color: #005580;
 }
 
-  /* navbar */
+  /* footer */
 .footer {
   align-items: center;
   background-color: #005580;
-  color: whitesmoke;
-}
-.footer {
   text-decoration: none !important;
   color: white !important;
+  padding: 10px;
+  margin: 5px;
 }
+
 .footer h3 {
-  text-align: center;
-  writing-mode: vertical-rl;
+  text-align: end;
+  writing-mode: vertical-lr, end;
   font-size: 18px;
   font-weight: bolder;
   padding: 1px;
   margin: 1px;
 }
 
-.gooter h5{
-  text-align: center;
-  font-size: 16px;
-  font-weight: normal;
-  padding: 1px;
-  margin: 1px;
+.widget-header, .widget-content {
+  padding: 0;
+  margin: 0;
 }
 
 .footer p {
