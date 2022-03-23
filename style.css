@@ -110,12 +110,24 @@ border: 1px solid white;
 }
 .footer h3 {
   text-align: center;
+  writing-mode: vertical-rl;
   font-size: 18px;
   font-weight: bolder;
+  padding: 1px;
+  margin: 1px;
+}
+
+.gooter h5{
+  text-align: center;
+  font-size: 16px;
+  font-weight: normal;
+  padding: 1px;
+  margin: 1px;
 }
 
 .footer p {
-  font-size: 1rem;
+  font-size: 14px;
+  font-weight: lighter;
   padding: 1px;
   margin: 1px;
 }
