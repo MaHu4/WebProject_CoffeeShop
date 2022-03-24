@@ -106,9 +106,8 @@ border: 1px solid white;
   text-decoration: none !important;
   color: white !important;
   padding: 10px;
-  margin: 5px;
+  margin: 10px;
 }
-
 .footer h3 {
   font-size: 18px;
   font-weight: bolder;
@@ -116,10 +115,10 @@ border: 1px solid white;
   margin: 1px;
 }
 
-/*.widget-header, .widget-content {
-  padding: 0;
-  margin: 0;
-}*/
+.widget-header, .widget-content {
+  padding: 5px;
+  margin: 5px;
+}
 
 .footer p {
   font-size: 14px;
@@ -127,15 +126,10 @@ border: 1px solid white;
   padding: 1px;
   margin: 1px;
 }
-.footer .fa-brands {
-  padding: 5px;
+.footer .fa-solid {
+  padding: 10px;
   margin: 1px;
   text-decoration: none;
-}
-
-.footer-widget {
-  padding: 5px;
-  margin: 5px;
 }
 
 .footer.a:hover {
@@ -150,7 +144,9 @@ line-height: 2px;
   padding: 10px;
 }
 
-
+#column-icon {
+  columns: auto;
+}
 
 
 
