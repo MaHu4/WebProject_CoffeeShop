@@ -102,6 +102,7 @@ border: 1px solid white;
 .footer {
   align-items: center;
   background-color: #005580;
+  text-align: justify;
   text-decoration: none !important;
   color: white !important;
   padding: 10px;
@@ -109,18 +110,16 @@ border: 1px solid white;
 }
 
 .footer h3 {
-  text-align: end;
-  writing-mode: vertical-lr, end;
   font-size: 18px;
   font-weight: bolder;
   padding: 1px;
   margin: 1px;
 }
 
-.widget-header, .widget-content {
+/*.widget-header, .widget-content {
   padding: 0;
   margin: 0;
-}
+}*/
 
 .footer p {
   font-size: 14px;
@@ -131,6 +130,7 @@ border: 1px solid white;
 .footer .fa-brands {
   padding: 5px;
   margin: 1px;
+  text-decoration: none;
 }
 
 .footer-widget {
