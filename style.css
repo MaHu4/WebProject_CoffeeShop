@@ -102,17 +102,26 @@ border: 1px solid white;
 .footer {
   align-items: center;
   background-color: #005580;
-  text-align: justify;
+  text-align: left;
   text-decoration: none !important;
   color: white !important;
   padding: 10px;
   margin: 10px;
 }
+
 .footer h3 {
   font-size: 18px;
   font-weight: bolder;
   padding: 1px;
   margin: 1px;
+}
+
+.footer i {
+  
+}
+.footer .widget {
+  padding: 5px;
+  margin: 5px;
 }
 
 .widget-header, .widget-content {
@@ -136,17 +145,11 @@ border: 1px solid white;
   text-decoration: none !important;
   color: white !important;
 }
-.open-time {
-line-height: 2px;
-}
 
 .fa-regular {
   padding: 10px;
 }
 
-#column-icon {
-  columns: auto;
-}
 
 
 
