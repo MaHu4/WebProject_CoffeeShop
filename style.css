@@ -102,6 +102,7 @@ border: 1px solid white;
 .footer {
   align-items: center;
   background-color: #005580;
+  font-size: 14; 
   text-align: left;
   text-decoration: none !important;
   color: white !important;
@@ -116,15 +117,38 @@ border: 1px solid white;
   margin: 1px;
 }
 
-.footer i {
-  
+.footer h4 {
+  font-size: 16px;
+  font-weight: bold;
 }
+
+.grid-container {
+  display: grid;
+  grid: auto / auto auto;
+  grid-gap: 10px;
+  column-width: auto;
+  background-color: #005580;
+  padding: 2px;
+}
+.grid-container > div {
+  font-size: 14px;
+  background-color: #005580;
+  text-align: left;
+  padding: 2px;
+  margin: 2px;
+}
+
+.grid-container div .icon-column {
+ column-width: 1px;
+ align-items: center;
+}
+
 .footer .widget {
   padding: 5px;
   margin: 5px;
 }
 
-.widget-header, .widget-content {
+/*.widget-header, .widget-content {
   padding: 5px;
   margin: 5px;
 }
@@ -136,7 +160,7 @@ border: 1px solid white;
   margin: 1px;
 }
 .footer .fa-solid {
-  padding: 10px;
+  padding: 1px;
   margin: 1px;
   text-decoration: none;
 }
