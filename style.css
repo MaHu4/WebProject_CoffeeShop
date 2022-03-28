@@ -124,9 +124,10 @@ border: 1px solid white;
 
 .grid-container {
   display: grid;
-  grid: auto / auto auto;
+  grid: auto / 50px 1000px;
+  border: 1px solid whitesmoke;
   grid-gap: 10px;
-  column-width: auto;
+  grid-auto-columns: min-content;
   background-color: #005580;
   padding: 2px;
 }
