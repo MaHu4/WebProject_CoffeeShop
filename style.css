@@ -41,6 +41,7 @@ h1 {
   height: 150px;
   padding: 10px;
   margin: 10px;
+  box-shadow: 5px 5px 27px 5px #000000;
 }  
 
 .navbar :first-child {
@@ -95,8 +96,8 @@ margin-left: 20px;
 }
 .navbar-collapse {
   background-color: #005580;
-  border: 1px solid white; 
-  box-shadow: 1px 1px 1px 1px white;
+  /*border: 1px solid white; */
+  box-shadow: 1px 1px 1px 1px black;
 }
 
   /* footer */
