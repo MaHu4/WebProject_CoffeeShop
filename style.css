@@ -32,6 +32,7 @@ h1 {
   transform: translate(-50%, -50%);
 }
 
+
   /* navbar */
 
 .navbar { 
@@ -43,6 +44,10 @@ h1 {
   margin: 10px;
   box-shadow: 0px 10px 9px -1px rgba(0,0,0,0.85);
 }  
+
+.container-fluid {
+  margin: 10px;
+}
 
 .navbar-light .navbar-brand {
   font-family:'Special Elite', cursive;
@@ -89,6 +94,8 @@ h1 {
 }
 .navbar-light .navbar-toggler {
   border: 1px solid white;
+  background-color: #004465;
+  
 }
 .navbar-toggler:focus {
   text-decoration: none;
@@ -103,20 +110,6 @@ h1 {
   box-shadow: 0px 10px 9px -1px black;
 }
 
-}
-/* If the screen size is 773px wide or more, set the font-size of <div> to 18px */
-@media screen and (min-width: 773px) {
-  div.navbar-collapse {
-    font-size: 18px;
-  }
-}
-/* If the screen size is 772px wide or less, set the font-size of <div> to 30px */
-@media screen and (max-width: 772px) {
-  div.navbar-collapse {
-    font-size: 16px;
-  }
-}
-
   /* footer */
 .footer {
   align-items: center;
@@ -125,7 +118,7 @@ h1 {
   /*text-decoration: none !important;*/
   color: white !important;
   box-shadow: 0px 10px 9px -1px rgba(0,0,0,0.85);
-  padding: 10px 25px 10px 25px;
+  padding: 10px /*25px 10px 25px*/;
   margin: 10px;
 }
 .footer h3 {
@@ -133,18 +126,20 @@ h1 {
   font-weight: bolder;
   padding: 1px;
   margin: 1px;
-}
+  text-shadow: 2px 2px 5px black !important;
+  }
 
 .grid-container {
   display: grid;
   grid: auto / 20px auto;
- /* border: 1px solid white;
-  border-width: 1px 1px;
-  box-shadow: 1px 1px 1px 1px white;*/
   grid-gap: 10px;
   background-color: #005580;
   padding: 2px;
-  min-height: 200px;
+  column-gap: 5px;
+  row-gap: 5px;
+  min-height: 220px;
+  min-width: 210px;
+  overflow: hidden;
   box-shadow: 0px 10px 9px -1px rgba(0,0,0,0.85);
 }
 .grid-container > div {
@@ -152,37 +147,53 @@ h1 {
   margin: 2px 5px 2px 5px;
 }
 
+@media screen and (max-width: 1050px) {
+  .widget  {
+    width: 100%;
+  }
+}
 
-/* If the screen size is 769px wide or more, set the font-size of <div> to 18px */
-@media screen and (min-width: 769px) {
+/* If the screen size is 1050px wide or less*/
+@media screen and (max-width: 1050px) {
+  div.grid-container {
+    font-size: 16px;
+  }
+  div.widget-header > h3 { 
+    font-size: 20px;
+  }
+}
+
+/* If the screen size is 1051px wide or more */
+@media screen and (min-width: 1051px) {
   div.grid-container {
     font-size: 14px;
   }
-}
-/* If the screen size is 772px wide or less, set the font-size of <div> to 30px */
-@media screen and (max-width: 770px) {
-  div.grid-container {
-    font-size: 13px;
+  div.widget-header > h3 { 
+    font-size: 18px;
   }
+}
+.widget {
+  margin: 5px;
 }
 .widget-header, .widget-content {
   padding: 5px;
   margin: 5px;
 }
 .fa-solid {
-  padding: 2px;
-  margin: 2px;
+  padding: 5px;
+  margin: 5px;
   text-decoration: none;
 }
 .fa-brands {
-  padding: 2px;
-  margin: 2px;
+  padding: 5px;
+  margin: 5px;
   text-decoration: none;
 }
 .footer.a:hover {
   text-decoration: none !important;
   color: white !important;
 }
+
 
 
 
