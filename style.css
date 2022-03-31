@@ -36,17 +36,14 @@ h1 {
 
 .navbar { 
   background-color: #005580;
-  color: white;
+  color: white !important;
   text-decoration: none;
   height: 150px;
   padding: 10px;
   margin: 10px;
-  box-shadow: 5px 5px 27px 5px #000000;
+  box-shadow: 0px 10px 9px -1px rgba(0,0,0,0.85);
 }  
 
-.navbar :first-child {
-margin-left: 20px;
-}
 .navbar-light .navbar-brand {
   font-family:'Special Elite', cursive;
   font-size: 2.5em;
@@ -59,6 +56,7 @@ margin-left: 20px;
   margin: 10px;
   text-decoration: none;
 }
+
 .active {
   color:  white;
   background-color: #005580;
@@ -73,7 +71,8 @@ margin-left: 20px;
   margin: 10px; 
 }
 .nav-link:hover, :visited {
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: white;
   color: white;
   border: 1px solid white;
   border-width: 1px 1px;
@@ -97,17 +96,29 @@ margin-left: 20px;
 .navbar-collapse {
   background-color: #005580;
   /*border: 1px solid white; */
-  box-shadow: 1px 1px 1px 1px black;
+  box-shadow: 0px 10px 9px -1px black;
+}
+/* If the screen size is 773px wide or more, set the font-size of <div> to 18px */
+@media screen and (min-width: 773px) {
+  div.navbar-collapse {
+    font-size: 18px;
+  }
+}
+/* If the screen size is 772px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 772px) {
+  div.navbar-collapse {
+    font-size: 16px;
+  }
 }
 
   /* footer */
 .footer {
   align-items: center;
   background-color: #005580;
-  font-size: 14px; 
-  text-align: left;
-  text-decoration: none !important;
+  font-size: 14px;
+  /*text-decoration: none !important;*/
   color: white !important;
+  box-shadow: 0px 10px 9px -1px rgba(0,0,0,0.85);
   padding: 10px 25px 10px 25px;
   margin: 10px;
 }
@@ -117,6 +128,7 @@ margin-left: 20px;
   padding: 1px;
   margin: 1px;
 }
+
 .grid-container {
   display: grid;
   grid: auto / 20px auto;
@@ -128,11 +140,22 @@ margin-left: 20px;
   padding: 2px;
 }
 .grid-container > div {
-  font-size: 14px;
-  background-color: #005580;
-  text-align: left;
   padding: 2px;
   margin: 2px 5px 2px 5px;
+}
+
+
+/* If the screen size is 769px wide or more, set the font-size of <div> to 18px */
+@media screen and (min-width: 769px) {
+  div.grid-container {
+    font-size: 14px;
+  }
+}
+/* If the screen size is 772px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 770px) {
+  div.grid-container {
+    font-size: 13px;
+  }
 }
 .widget-header, .widget-content {
   padding: 5px;
