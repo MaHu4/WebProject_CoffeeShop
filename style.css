@@ -1,20 +1,13 @@
 
-/* welcome background image */
 
-.bg-image {
-  background: url('images/SingleCup.jpg');
-  background-color: #EDD1B3;
-  height:100vh;
-  background-size:cover;
-  background-position:center;
-  background-repeat: no-repeat;
-  -webkit-mask-image: linear-gradient(black, transparent);
-  mask-image: linear-gradient(black, transparent);
-}
+/* general fonts settingy */
+
 body {
+  font-weight: normal;
   font-family: 'Merriweather', serif;
-  font-size: 18px;
+  font-size: 16px;
   color: #005580;
+  text-align: center;
 }
 h1 {
   font-family: 'Special Elite', cursive;
@@ -24,19 +17,31 @@ h1 {
   color: #005580;
   text-shadow: 2px 2px 10px white !important;
 }
-.welcome-text {
+
+h2 {
+  font-family: 'Special Elite', cursive;
+  font-size: 2em;
+  font-weight: bolder;
+  font-style: normal;
+  color: #005580;
+  position: relative;
+  text-shadow: 2px 2px 10px white !important;
   text-align: center;
-  position: absolute;
-  top: 48%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  padding: 0px;
+  margin: 20px;
 }
 
+h3 {
+ font-size: 2rem;
+  color: white;
+  text-shadow: 2px 2px 10px white !important;
+}
 
-  /* navbar */
+/* navbar */
 
 .navbar { 
   background-color: #004465;
+  font-size: 18px;
   color: white !important;
   text-decoration: none;
   height: 150px;
@@ -110,6 +115,105 @@ h1 {
   box-shadow: 0px 10px 9px -1px black;
 }
 
+
+/* home section */
+.bg-image {
+  background: url('images/SingleCup.jpg');
+  background-color: #EDD1B3;
+  min-height:100vh;
+  background-size:cover;
+  background-position:center center;
+  background-repeat: no-repeat;
+  -webkit-mask-image: linear-gradient(black, transparent);
+  mask-image: linear-gradient(black, transparent);
+}
+
+.home-section {
+  font-size: 18px;
+  text-align: center;
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#home p {
+  text-align: center;
+}
+
+
+/* about us section */
+
+.container {
+  padding: 10px;
+  margin: 10px;
+}
+
+.container p {
+  text-align: justify;
+  padding: 5px;
+  font-weight: normal;
+}
+
+    /* responsive <p>-margins */
+    /*@media screen and (max-width: 1050px) {
+      div.about-section  {
+        width: 100%;
+      }
+    }
+    @media screen and (max-width: 1050px) {
+      div.about-section {
+        margin: 10px 100px;
+      }
+    }
+    @media screen and (min-width: 1051px) {
+      div.about-section {
+        margin: 5px 20px;
+      }
+    }*/
+
+
+/* menu section */
+
+.menu-section {
+  background-color: #004465;
+  box-shadow: 0px 10px 9px -1px rgba(0,0,0,0.85);
+  padding: 10px;
+  margin: 10px;
+}
+.menu-section h3 {
+  padding: 10px;
+}
+
+.menu-section .row p {
+  text-align: center;
+  padding: 5px;
+  font-weight: normal;
+}
+.menu-header {
+  background-color: #005580;
+  color: white;
+  box-shadow: 0px 10px 9px -1px rgba(0,0,0,0.85);
+  padding: 10px;
+  margin: 10px;
+}
+.menu-content {
+  background-color: #005580;
+  color: white;
+  box-shadow: 0px 10px 9px -1px rgba(0,0,0,0.85);
+  padding: 10px;
+  margin: 10px;
+}
+.menu-content ul {
+  list-style-type:none
+}
+.menu-content p {
+  font-style: oblique;
+  font-size: 14px;
+}
+
+
+
   /* footer */
 .footer {
   align-items: center;
@@ -147,13 +251,13 @@ h1 {
   margin: 2px 5px 2px 5px;
 }
 
+    /* responsive footer*/
 @media screen and (max-width: 1050px) {
   .widget  {
     width: 100%;
   }
 }
-
-/* If the screen size is 1050px wide or less*/
+    /* If the screen size is 1050px wide or less*/
 @media screen and (max-width: 1050px) {
   div.grid-container {
     font-size: 16px;
@@ -162,8 +266,7 @@ h1 {
     font-size: 20px;
   }
 }
-
-/* If the screen size is 1051px wide or more */
+    /* If the screen size is 1051px wide or more */
 @media screen and (min-width: 1051px) {
   div.grid-container {
     font-size: 14px;
@@ -180,13 +283,13 @@ h1 {
   margin: 5px;
 }
 .fa-solid {
-  padding: 5px;
-  margin: 5px;
+  padding: 2px;
+  margin: 2px;
   text-decoration: none;
 }
 .fa-brands {
-  padding: 5px;
-  margin: 5px;
+  padding: 2px;
+  margin: 2px;
   text-decoration: none;
 }
 .footer.a:hover {
