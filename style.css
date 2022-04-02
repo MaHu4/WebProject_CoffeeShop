@@ -37,6 +37,10 @@ h3 {
   text-shadow: 2px 2px 10px white !important;
 }
 
+h4 {
+  font-size: 1.5 rem
+}
+
 /* navbar */
 
 .navbar { 
@@ -176,13 +180,14 @@ h3 {
 /* menu section */
 
 .menu-section {
-  background-color: #004465;
+  background-color: #F9F2EA;
   box-shadow: 0px 10px 9px -1px rgba(0,0,0,0.85);
   padding: 10px;
   margin: 10px;
 }
 .menu-section h3 {
   padding: 10px;
+  color: #004465;
 }
 
 .menu-section .row p {
@@ -191,15 +196,25 @@ h3 {
   font-weight: normal;
 }
 .menu-header {
+  color: white !important;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1.0;
   background-color: #005580;
-  color: white;
+  /*background-color: white;
+  color: #004465;*/
   box-shadow: 0px 10px 9px -1px rgba(0,0,0,0.85);
   padding: 10px;
   margin: 10px;
 }
+
+.menu-header h4 {
+  font-weight: bolder;
+}
+
 .menu-content {
-  background-color: #005580;
-  color: white;
+  background-color: white;
+  color: #004465;
   box-shadow: 0px 10px 9px -1px rgba(0,0,0,0.85);
   padding: 10px;
   margin: 10px;
@@ -211,7 +226,6 @@ h3 {
   font-style: oblique;
   font-size: 14px;
 }
-
 
 
   /* footer */
