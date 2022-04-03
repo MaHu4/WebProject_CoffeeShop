@@ -38,7 +38,8 @@ h3 {
 }
 
 h4 {
-  font-size: 1.5 rem
+  font-size: 1.5 rem;
+  padding: 10px 0px
 }
 
 /* navbar */
@@ -192,17 +193,12 @@ h4 {
 .menu-main-header {
   margin: 50px 0px 10px 0px;
 }
-.menu-sub-section {
-  background-color: transparent;
- /*box-shadow: 0px 1px 9px -1px rgba(0,0,0,0.85);*/
-  padding: 10px;
-  margin: 1opx
-}
 
 .menu-box {
   box-shadow: 0px 1px 9px -1px rgba(0,0,0,0.85);
+  height: auto;
   margin: 20px 0px;
-  padding: 20px 5px;
+  padding: 10px 5px;
 }
 
 .menu-section {
@@ -243,14 +239,31 @@ h4 {
   padding: 10px;
   margin: 10px;
 }
+
 .menu-content ul {
   list-style-type:none
+}
+.menu-content li {
+  padding: 5px 1px;
+  margin: 0px
 }
 .menu-content p {
   font-style: oblique;
   font-size: 14px;
+  padding: 5px 1px;
+  margin: 0px;
 }
 
+.drink-column {
+  min-height: auto;
+}
+
+.food-columns-1-2 {
+  min-height: auto;
+}
+.food-columns-3-4 {
+  min-height: auto;
+}
   /* footer */
 .footer {
   align-items: center;
