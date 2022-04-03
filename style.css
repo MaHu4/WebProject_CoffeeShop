@@ -51,7 +51,7 @@ h4 {
   height: 150px;
   padding: 10px;
   margin: 10px;
-  box-shadow: 0px 10px 9px -1px rgba(0,0,0,0.85);
+  box-shadow: 0px 1px 9px -1px rgba(0,0,0,0.85);
 }  
 
 .container-fluid {
@@ -72,7 +72,7 @@ h4 {
   height: 105px;
   padding: 10px;
   margin: 10px;
-  box-shadow: 0px 10px 9px -1px rgba(0,0,0,0.85);
+  box-shadow: 0px 1px 9px -1px rgba(0,0,0,0.85);
 }
 
 .active {
@@ -116,7 +116,7 @@ h4 {
 .navbar-collapse {
   background-color: #005580;
   min-height: 105px;
-  box-shadow: 0px 10px 9px -1px black;
+  box-shadow: 0px 1px 9px -1px black;
 }
 
 
@@ -150,7 +150,6 @@ h4 {
 
 .container {
   padding: 10px;
-  margin: 10px;
 }
 
 .container p {
@@ -190,13 +189,26 @@ h4 {
   padding: 0;
   margin: 0;
 }
-
+.menu-main-header {
+  margin: 50px 0px 10px 0px;
+}
 .menu-sub-section {
   background-color: transparent;
-  box-shadow: 0px 10px 9px -1px rgba(0,0,0,0.85);
+ /*box-shadow: 0px 1px 9px -1px rgba(0,0,0,0.85);*/
   padding: 10px;
-  margin: 10px;
+  margin: 1opx
 }
+
+.menu-box {
+  box-shadow: 0px 1px 9px -1px rgba(0,0,0,0.85);
+  margin: 20px 0px;
+  padding: 20px 5px;
+}
+
+.menu-section {
+  padding: 5px;
+}
+
 .menu-section h3 {
   padding: 10px;
   color: #004465;
@@ -215,7 +227,7 @@ h4 {
   background-color: #005580;
   /*background-color: white;
   color: #004465;*/
-  box-shadow: 0px 10px 9px -1px rgba(0,0,0,0.85);
+  box-shadow: 0px 1px 9px -1px rgba(0,0,0,0.85);
   padding: 10px;
   margin: 10px;
 }
@@ -227,7 +239,7 @@ h4 {
 .menu-content {
   background-color: white;
   color: #004465;
-  box-shadow: 0px 10px 9px -1px rgba(0,0,0,0.85);
+  box-shadow: 0px 1px 9px -1px rgba(0,0,0,0.85);
   padding: 10px;
   margin: 10px;
 }
@@ -239,15 +251,15 @@ h4 {
   font-size: 14px;
 }
 
-
   /* footer */
 .footer {
   align-items: center;
   background-color:#004465;
   font-size: 14px;
+  text-align: left;
   /*text-decoration: none !important;*/
   color: white !important;
-  box-shadow: 0px 10px 9px -1px rgba(0,0,0,0.85);
+  box-shadow: 0px 1px 9px -1px rgba(0,0,0,0.85);
   padding: 10px /*25px 10px 25px*/;
   margin: 10px;
 }
@@ -270,7 +282,7 @@ h4 {
   min-height: 220px;
   min-width: 210px;
   overflow: hidden;
-  box-shadow: 0px 10px 9px -1px rgba(0,0,0,0.85);
+  box-shadow: 0px 1px 9px -1px rgba(0,0,0,0.85);
 }
 .grid-container > div {
   padding: 2px;
@@ -278,29 +290,30 @@ h4 {
 }
 
     /* responsive footer*/
-@media screen and (max-width: 1050px) {
-  .widget  {
-    width: 100%;
-  }
-}
-    /* If the screen size is 1050px wide or less*/
-@media screen and (max-width: 1050px) {
-  div.grid-container {
-    font-size: 16px;
-  }
-  div.widget-header > h3 { 
-    font-size: 20px;
-  }
-}
-    /* If the screen size is 1051px wide or more */
-@media screen and (min-width: 1051px) {
-  div.grid-container {
-    font-size: 14px;
-  }
-  div.widget-header > h3 { 
+   /* @media screen and (max-width: 1050px) {
+      .widget  {
+        width: 100%;
+      }
+    }*/
+        /* If the screen size is 1050px wide or less*/
+    /*@media screen and (max-width: 1050px) {
+      div.grid-container {
+        font-size: 16px;
+      }
+      div.widget-header > h3 { 
+        font-size: 20px;
+      }
+    }*/
+        /* If the screen size is 1051px wide or more */
+    /*@media screen and (min-width: 1051px) {
+      div.grid-container {
+        font-size: 14px;
+      }*/
+
+      div.widget-header > h3 { 
     font-size: 18px;
   }
-}
+
 .widget {
   margin: 5px;
 }
