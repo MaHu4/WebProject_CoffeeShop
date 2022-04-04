@@ -10,7 +10,7 @@ body {
   text-align: center;
 }
 h1 {
-  font-family: 'Special Elite', cursive;
+  font-family: 'Special Elite' cursive;
   font-size: 3em;
   font-weight: bolder;
   font-style: normal;
@@ -52,16 +52,16 @@ h4 {
   height: 150px;
   padding: 10px;
   margin: 10px;
+  border-radius: 15px 50px;
   box-shadow: 0px 1px 9px -1px rgba(0,0,0,0.85);
 }  
-
 .container-fluid {
-  margin: 10px;
+  margin: 0px;
+  padding: 0px;
 }
-
 .navbar-light .navbar-brand {
   font-family:'Special Elite', cursive;
-  font-size: 2.5em;
+  font-size: 2em;
   font-weight: bolder;
   font-style: normal;
   color: white !important;
@@ -71,8 +71,11 @@ h4 {
   line-height: 1.0;
   background-color: #005580;
   height: 105px;
-  padding: 10px;
+  padding: 25px;
   margin: 10px;
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
   box-shadow: 0px 1px 9px -1px rgba(0,0,0,0.85);
 }
 
@@ -81,6 +84,7 @@ h4 {
   background-color: #005580;
   border: 1px solid white;
   border-width: 1px 1px;
+  border-radius: 15px 50px;
   box-shadow: 1px 1px 1px 1px white;
 }
 .navbar-light .navbar-nav .nav-link {
@@ -94,6 +98,7 @@ h4 {
   text-decoration-color: white;
   color: white;
   border: 1px solid white;
+  border-radius: 15px 50px;
   border-width: 1px 1px;
 }
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
@@ -105,7 +110,7 @@ h4 {
 .navbar-light .navbar-toggler {
   border: 1px solid white;
   background-color: #004465;
-  
+  border-radius: 50px;
 }
 .navbar-toggler:focus {
   text-decoration: none;
@@ -117,6 +122,7 @@ h4 {
 .navbar-collapse {
   background-color: #005580;
   min-height: 105px;
+  border-radius: 15px 50px;
   box-shadow: 0px 1px 9px -1px black;
 }
 
@@ -191,6 +197,9 @@ h4 {
   margin: 0;
 }
 
+.carousel-item {
+  border-radius: 15px 50px;
+}
 .carousel-inner {
   box-shadow: 0px 1px 9px -1px rgba(0,0,0,0.85);
 }
@@ -218,6 +227,7 @@ h4 {
 }
 
 .menu-box {
+  border-radius: 50px 50px;
   box-shadow: 0px 1px 9px -1px rgba(0,0,0,0.85);
   height: auto;
   margin: 20px 0px;
@@ -246,6 +256,7 @@ h4 {
   background-color: #005580;
   /*background-color: white;
   color: #004465;*/
+  border-radius: 15px 50px;
   box-shadow: 0px 1px 9px -1px rgba(0,0,0,0.85);
   padding: 10px;
   margin: 10px;
@@ -258,6 +269,7 @@ h4 {
 .menu-content {
   background-color: white;
   color: #004465;
+  border-radius: 50px 50px;
   box-shadow: 0px 1px 9px -1px rgba(0,0,0,0.85);
   padding: 10px;
   margin: 10px;
@@ -287,6 +299,7 @@ h4 {
 .food-columns-3-4 {
   min-height: auto;
 }
+
   /* footer */
 .footer {
   align-items: center;
@@ -295,9 +308,10 @@ h4 {
   text-align: left;
   /*text-decoration: none !important;*/
   color: white !important;
-  box-shadow: 0px 1px 9px -1px rgba(0,0,0,0.85);
   padding: 10px /*25px 10px 25px*/;
   margin: 10px;
+  border-radius: 15px 50px;
+  box-shadow: 0px 1px 9px -1px rgba(0,0,0,0.85);
 }
 .footer h3 {
   font-size: 18px;
@@ -318,6 +332,9 @@ h4 {
   min-height: 220px;
   min-width: 210px;
   overflow: hidden;
+  padding: 10px /*25px 10px 25px*/;
+  margin: 10px;
+  border-radius: 15px 50px;
   box-shadow: 0px 1px 9px -1px rgba(0,0,0,0.85);
 }
 .grid-container > div {
