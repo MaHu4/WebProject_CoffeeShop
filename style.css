@@ -190,6 +190,29 @@ h4 {
   padding: 0;
   margin: 0;
 }
+
+.carousel-inner {
+  box-shadow: 0px 1px 9px -1px rgba(0,0,0,0.85);
+}
+.carousel-item > img{
+ opacity: 0.5;
+}
+
+.showcarouseltext {
+  margin: 10px 0px;
+  padding: 0px;
+}
+
+.showcarouseltext p {
+  padding: 1px;
+  margin: 0px;
+}
+@media screen and (min-width: 767px) {
+  div.showcarouseltext {
+    display: none;
+  }
+}
+
 .menu-main-header {
   margin: 50px 0px 10px 0px;
 }
