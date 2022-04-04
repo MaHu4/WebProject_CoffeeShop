@@ -10,7 +10,7 @@ body {
   text-align: center;
 }
 h1 {
-  font-family: 'Special Elite' cursive;
+  font-family: 'Special Elite', cursive;
   font-size: 3em;
   font-weight: bolder;
   font-style: normal;
@@ -34,12 +34,12 @@ h2 {
 h3 {
  font-size: 2rem;
   color: white;
-  text-shadow: 2px 2px 10px white !important;
+  text-shadow: 2px 2px 10px white;
 }
 
 h4 {
   font-size: 1.5 rem;
-  padding: 10px 0px
+  padding: 10px 0px;
 }
 
 /* navbar */
@@ -84,7 +84,7 @@ h4 {
   background-color: #005580;
   border: 1px solid white;
   border-width: 1px 1px;
-  border-radius: 15px 50px;
+  border-radius: 15px 15px;
   box-shadow: 1px 1px 1px 1px white;
 }
 .navbar-light .navbar-nav .nav-link {
@@ -98,7 +98,7 @@ h4 {
   text-decoration-color: white;
   color: white;
   border: 1px solid white;
-  border-radius: 15px 50px;
+  border-radius: 15px 15px;
   border-width: 1px 1px;
 }
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
@@ -110,7 +110,7 @@ h4 {
 .navbar-light .navbar-toggler {
   border: 1px solid white;
   background-color: #004465;
-  border-radius: 50px;
+  border-radius: 15px;
 }
 .navbar-toggler:focus {
   text-decoration: none;
@@ -227,7 +227,7 @@ h4 {
 }
 
 .menu-box {
-  border-radius: 50px 50px;
+  border-radius: 15px 50px;
   box-shadow: 0px 1px 9px -1px rgba(0,0,0,0.85);
   height: auto;
   margin: 20px 0px;
@@ -269,7 +269,7 @@ h4 {
 .menu-content {
   background-color: white;
   color: #004465;
-  border-radius: 50px 50px;
+  border-radius: 15px 15px;
   box-shadow: 0px 1px 9px -1px rgba(0,0,0,0.85);
   padding: 10px;
   margin: 10px;

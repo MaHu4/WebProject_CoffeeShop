@@ -20,44 +20,48 @@
     <!-- Link to style.css -->
     <link rel="stylesheet" href="style.css">
 </head>
+
+
 <body>
-
  
-  
 <!-- navbar -->
-<nav class="navbar navbar-expand-lg navbar-light fixed-top"> 
-<div class="container-fluid">
-    <span class="navbar-brand">NAD.<br/>café</span>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link active" href="#home">home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#about">about us</a></li>
-            <li class="nav-item"><a class="nav-link" href="#services">our menu</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact">contact us</a></li>
-            <li class="nav-item"><a class="nav-link" href="#nadayog">NADA YOG</a></li>
-            
-        </ul>
+<div>
+  <div class="bg-image">
+<nav class="navbar navbar-expand-lg navbar-light"> 
+  <div class="container-fluid">
+      <span class="navbar-brand">NAD.<br/>café</span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link active" href="#home">home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#about">about us</a></li>
+              <li class="nav-item"><a class="nav-link" href="#menu">our menu</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contact">contact us</a></li>
+              <li class="nav-item"><a class="nav-link" href="#nadayog">NADA YOG</a></li>
+              
+          </ul>
+      </div>
     </div>
-</div>
-</nav>
-
-<!-- home -->
-
-<section class="bg-image"></section>
-
-<div id="home" class="container p-5 my-5 home-section">
-  <h1>.welcome to NAD.café</h1>
-  <p>.speciality coffee, home baked cakes and fresh juices <br> .a place with soul and sound</p>
+  </div>
+  </nav>
+  
+  <!-- home -->
+  
+  
+  
+  <div id="home" class="container p-5 my-5 home-section">
+    <h1>.welcome to NAD.café</h1>
+    <p>.speciality coffee, home baked cakes and fresh juices <br> .a place with soul and sound</p>
+  </div>
 </div>
 
 <!-- about us  -->
 
-<div class="about-section" id="about">
+<div class="about-section">
 <div class="container">
-  <h2><span>.about us</span></h2>
+  <h2 id="about"><span>.about us</span></h2>
     <div>
       <p>.at NAD.café we love three things: tasty coffee, healthy food, and good sound (<em>nada</em> in sanskrit)  
         .come to our rooftop bar - the only of this kind in Lumbini - and enjoy good music, a cool breeze during hot days and the sunset
@@ -97,10 +101,9 @@
   https://www.youtube.com/watch?v=kLhfXi3PkvU
 -->
 
-<div id="menu">
-
+<div>
   <div class="container  menu-section">
-    <h2>.our menu</h2>
+    <h2 id="menu">.our menu</h2>
     <div class="row">
       <div class="col-12">
         <p>
@@ -160,6 +163,8 @@
         </button>
       </div>
     
+      <!-- text-box shown only on smaller devices-->
+
       <div class="showcarouseltext">
         <p>
         .all dishes are freshly prepared with love and care
