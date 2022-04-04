@@ -155,6 +155,42 @@ h4 {
 
 /* about us section */
 
+/* mage mosaic */
+.big_col {
+  height: 946px;
+  width: 482px;
+  float:left;
+}
+img {
+  display:block;
+  margin:0;
+  padding:0;
+  border:none;
+}
+
+.medium_col{
+  width:246px;
+  height:164px;
+}
+
+.small_col{
+  width:82px;
+  height: 82px;
+}
+.big_img img {
+  width:328px;
+  height:492px
+}
+.medium_img img {
+  width:164px;
+  height:246px;
+}
+.small_img img {
+  width:82px;
+  height:123px;
+}
+
+
 .container {
   padding: 10px;
 }
