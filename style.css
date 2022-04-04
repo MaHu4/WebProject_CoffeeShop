@@ -156,38 +156,44 @@ h4 {
 /* about us section */
 
 /* mage mosaic */
-.big_col {
-  height: 946px;
-  width: 482px;
-  float:left;
-}
-img {
-  display:block;
-  margin:0;
-  padding:0;
-  border:none;
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
 }
 
-.medium_col{
-  width:246px;
-  height:164px;
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 4px;
 }
 
-.small_col{
-  width:82px;
-  height: 82px;
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
 }
-.big_img img {
-  width:328px;
-  height:492px
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
 }
-.medium_img img {
-  width:164px;
-  height:246px;
-}
-.small_img img {
-  width:82px;
-  height:123px;
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
 }
 
 
