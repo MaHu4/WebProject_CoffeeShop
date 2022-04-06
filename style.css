@@ -160,21 +160,31 @@ h4 {
 .about-section {
   padding: 10px;
 }
-
-.about-img {
-   width: 100%;
-   height: auto;
-   padding: 0px;
-   margin: 5px;
-   border: 5px solid #005580;
-   border-radius: 15%;
- }
-
 .about-section p {
   text-align: justify;
   padding: 5px;
-  font-weight: normal;
-}
+ }
+
+.about-img1 {
+  min-width: 30%;
+  height: auto;
+  float:left;
+  padding: 5px;
+  margin: 5px 16px 5px 5px;
+  border: 5px solid #005580;
+  border-radius: 15%;
+ }
+
+ .about-img2 {
+  min-width: 30%;
+  height: auto;
+  float:right;
+  padding: 5px;
+  margin: 5px 5px 5px 16px;
+  border: 5px solid #005580;
+  border-radius: 15%;
+ }
+
 
 /* menu section */
 
