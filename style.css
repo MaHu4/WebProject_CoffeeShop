@@ -158,73 +158,57 @@ h4 {
 /* about us section */
 
 /* mage mosaic */
-.row {
+.mosaic-row {
   display: -ms-flexbox; /* IE10 */
   display: flex;
   -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
-  padding: 0 4px;
+  padding: 0px;
+  margin: 0px
 }
 
-/* Create four equal columns that sits next to each other */
-.column {
-  -ms-flex: 25%; /* IE10 */
+/* Create four two columns next to each other */
+.mosaic-column {
+  -ms-flex: 50%; /* IE10 */
   flex: 50%;
   max-width: 50%;
-  padding: 0 4px;
+  padding: 0 2px;
 }
 
-.column img {
-  margin-top: 8px;
+.mosaic-column img {
+  margin-top: 2px;
   vertical-align: middle;
   width: 100%;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
-  }
-}
+/* mosaic-column-right appears b/w 992px and 1200px*/
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
+@media screen and (min-width: 991px) {
+  .mosaic-column {
     -ms-flex: 100%;
     flex: 100%;
     max-width: 100%;
   }
+  .mosaic-column-right {
+    display: none;
+  }
+  .mosaic-column-left .img-disappear {
+    display: none;
+  }
 }
 
 
-.container {
+.about-section {
   padding: 10px;
 }
 
-.container p {
+.about-section p {
   text-align: justify;
   padding: 5px;
   font-weight: normal;
 }
 
-    /* responsive <p>-margins */
-    /*@media screen and (max-width: 1050px) {
-      div.about-section  {
-        width: 100%;
-      }
-    }
-    @media screen and (max-width: 1050px) {
-      div.about-section {
-        margin: 10px 100px;
-      }
-    }
-    @media screen and (min-width: 1051px) {
-      div.about-section {
-        margin: 5px 20px;
-      }
-    }*/
+
 
 
 /* menu section */
