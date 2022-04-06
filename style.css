@@ -195,7 +195,6 @@ h4 {
   }
   .about-img2 {
     margin: 5px 30px 15px 30px;
-
   }
 }
     
@@ -318,6 +317,7 @@ h4 {
 }
 
   /* footer */
+
 .footer {
   align-items: center;
   background-color:#004465;
@@ -325,8 +325,8 @@ h4 {
   text-align: left;
   /*text-decoration: none !important;*/
   color: white !important;
-  padding: 10px /*25px 10px 25px*/;
-  margin: 10px;
+  padding: 1px;
+  margin: 1px;
   border-radius: 15px 50px;
   box-shadow: 0px 1px 9px -1px rgba(0,0,0,0.85);
 }
@@ -341,7 +341,7 @@ h4 {
 .grid-container {
   display: grid;
   grid: auto / 20px auto;
-  grid-gap: 10px;
+  grid-gap: 5px;
   background-color: #005580;
   padding: 2px;
   column-gap: 5px;
@@ -349,14 +349,37 @@ h4 {
   min-height: 220px;
   min-width: 210px;
   overflow: hidden;
-  padding: 10px /*25px 10px 25px*/;
-  margin: 10px;
+  padding: 1px;
+  margin: 1px;
   border-radius: 15px 50px;
   box-shadow: 0px 1px 9px -1px rgba(0,0,0,0.85);
 }
 .grid-container > div {
   padding: 2px;
-  margin: 2px 5px 2px 5px;
+  margin: 2px 5px;
+}
+
+.widget {
+  padding: 5px 10px;
+  margin: 0px;
+}
+.widget-header, .widget-content {
+  padding: 5px;
+  margin: 5px;
+}
+.fa-solid {
+  padding: 2px;
+  margin: 2px;
+  text-decoration: none;
+}
+.fa-brands {
+  padding: 2px;
+  margin: 2px;
+  text-decoration: none;
+}
+.footer.a:hover {
+  text-decoration: none !important;
+  color: white !important;
 }
 
     /* responsive footer*/
@@ -380,31 +403,9 @@ h4 {
         font-size: 14px;
       }*/
 
-      div.widget-header > h3 { 
+   /*div.widget-header > h3 { 
     font-size: 18px;
-  }
-
-.widget {
-  margin: 5px;
-}
-.widget-header, .widget-content {
-  padding: 5px;
-  margin: 5px;
-}
-.fa-solid {
-  padding: 2px;
-  margin: 2px;
-  text-decoration: none;
-}
-.fa-brands {
-  padding: 2px;
-  margin: 2px;
-  text-decoration: none;
-}
-.footer.a:hover {
-  text-decoration: none !important;
-  color: white !important;
-}
+  }*/
 
 
 
