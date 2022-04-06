@@ -165,7 +165,9 @@ h4 {
    width: 100%;
    height: auto;
    padding: 0px;
-   margin: 5px
+   margin: 5px;
+   border: 5px solid #005580;
+   border-radius: 15%;
  }
 
 .about-section p {
@@ -173,10 +175,6 @@ h4 {
   padding: 5px;
   font-weight: normal;
 }
-
-
-
-
 
 /* menu section */
 
