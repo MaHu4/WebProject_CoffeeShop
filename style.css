@@ -1,7 +1,4 @@
 
-
-
-
 /* general fonts settingy */
 
 body {
@@ -21,7 +18,6 @@ h1 {
   color: #005580;
   text-shadow: 2px 2px 10px white !important;
 }
-
 h2 {
   font-family: 'Special Elite', cursive;
   font-size: 2em;
@@ -34,17 +30,16 @@ h2 {
   padding: 0px;
   margin: 20px;
 }
-
 h3 {
  font-size: 2rem;
   color: white;
   text-shadow: 2px 2px 10px white;
 }
-
 h4 {
   font-size: 1.5 rem;
   padding: 10px 0px;
 }
+
 
 /* navbar */
 
@@ -130,6 +125,7 @@ h4 {
   box-shadow: 0px 1px 9px -1px black;
 }
 
+
 /* home section */
 
 .bg-image {
@@ -141,8 +137,8 @@ h4 {
   background-repeat: no-repeat;
   -webkit-mask-image: linear-gradient(black, transparent);
   mask-image: linear-gradient(black, transparent);
+  border-radius: 15px 50px;
 }
-
 .home-section {
   font-size: 18px;
   text-align: center;
@@ -151,7 +147,6 @@ h4 {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
 #home p {
   text-align: center;
 }
@@ -175,7 +170,7 @@ h4 {
   padding: 5px;
   margin: 5px 15px 15px 5px;
   border: 5px solid #005580;
-  border-radius: 15%;
+  border-radius: 15% 50%;
  }
 
  .about-img2 {
@@ -185,7 +180,7 @@ h4 {
   padding: 5px;
   margin: 15px 5px 15px 15px;
   border: 5px solid #005580;
-  border-radius: 15%;
+  border-radius: 15% 50%;
  }
 
  @media screen and (max-width: 360px) {
@@ -206,13 +201,11 @@ h4 {
   padding: 0;
   margin: 0;
 }
-
 .fa-g {
   color: brown;
   padding: 0;
   margin: 0;
 }
-
 .carousel-item {
   border-radius: 15px 50px;
 }
@@ -222,12 +215,10 @@ h4 {
 .carousel-item > img{
  opacity: 0.5;
 }
-
 .showcarouseltext {
   margin: 10px 0px;
   padding: 0px;
 }
-
 .showcarouseltext p {
   padding: 1px;
   margin: 0px;
@@ -241,7 +232,6 @@ h4 {
 .menu-main-header {
   margin: 50px 0px 10px 0px;
 }
-
 .menu-box {
   border-radius: 15px 50px;
   box-shadow: 0px 1px 9px -1px rgba(0,0,0,0.85);
@@ -249,16 +239,13 @@ h4 {
   margin: 20px 0px;
   padding: 10px 5px;
 }
-
 .menu-section {
   padding: 5px;
 }
-
 .menu-section h3 {
   padding: 10px;
   color: #004465;
 }
-
 .menu-section .row p {
   text-align: center;
   padding: 5px;
@@ -277,11 +264,9 @@ h4 {
   padding: 10px;
   margin: 10px;
 }
-
 .menu-header h4 {
   font-weight: bolder;
 }
-
 .menu-content {
   background-color: white;
   color: #004465;
@@ -290,7 +275,6 @@ h4 {
   padding: 10px;
   margin: 10px;
 }
-
 .menu-content ul {
   list-style-type:none
 }
@@ -304,17 +288,16 @@ h4 {
   padding: 5px 1px;
   margin: 0px;
 }
-
 .drink-column {
   min-height: auto;
 }
-
 .food-columns-1-2 {
   min-height: auto;
 }
 .food-columns-3-4 {
   min-height: auto;
 }
+
 
 /* contact us */
 
@@ -323,8 +306,6 @@ h4 {
   margin-top: 10px;
 }
 .contact-box {
-  /*border-radius: 15px 50px;
-  box-shadow: 0px 1px 9px -1px rgba(0,0,0,0.85);*/
   height: auto;
   padding: 10px 5px;
 }
@@ -423,7 +404,6 @@ box-shadow: 0px 1px 9px -1px #B3B3B3;
   margin: 1px;
   text-shadow: 2px 2px 5px black !important;
   }
-
 .grid-container {
   display: grid;
   grid: auto / 20px auto;
@@ -444,7 +424,6 @@ box-shadow: 0px 1px 9px -1px #B3B3B3;
   padding: 2px;
   margin: 2px 5px;
 }
-
 .widget {
   padding: 5px 10px;
   margin: 0px;
