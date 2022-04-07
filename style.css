@@ -42,6 +42,35 @@ h4 {
 }
 
 
+  /* background */
+
+.bg{
+  background: url('images/SingleCup.jpg');
+  background-color: #EDD1B3;
+  height: 700px;
+  background-size:cover;
+  background-position:center center;
+  background-repeat: no-repeat;
+  -webkit-mask-image: linear-gradient(black, transparent);
+  mask-image: linear-gradient(black, transparent);
+  border-radius: 15px 50px;
+}
+.bg-image {
+  background: url('images/SingleCup.jpg');
+  background: gradient(to top,#f9fafbb0 0%,rgb(13 110 253 / 0%) 100%);
+  height:100%;
+}
+.home-section {
+  font-size: 18px;
+  text-align: center;
+  /*position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;*/
+  margin: 50px 5px;
+}
+
 /* navbar */
 
 .navbar { 
@@ -129,27 +158,6 @@ h4 {
 
 /* home section */
 
-.bg-image {
-  background: url('images/SingleCup.jpg');
-  background-color: #EDD1B3;
-  min-height:100vh;
-  background-size:cover;
-  background-position:center center;
-  background-repeat: no-repeat;
-  -webkit-mask-image: linear-gradient(black, transparent);
-  mask-image: linear-gradient(black, transparent);
-  border-radius: 15px 50px;
-}
-.home-section {
-  font-size: 18px;
-  text-align: center;
-  position: absolute;
-  top: 48%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 10px;
-  margin: 50px 5px;
-}
 #home p {
   text-align: center;
 }
@@ -218,9 +226,15 @@ h4 {
 }
 .carousel-inner {
   box-shadow: 0px 1px 9px -1px rgba(0,0,0,0.85);
+  border-radius: 15px 50px;
 }
 .carousel-item > img{
  opacity: 0.5;
+}
+@media screen and (max-width: 767px) {
+  .carousel-item > img {
+    opacity: 1;
+  }
 }
 .showcarouseltext {
   margin: 10px 0px;
