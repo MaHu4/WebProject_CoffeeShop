@@ -1,11 +1,16 @@
 
-  function myMap() {
-    var mapProp= {
-      center:new google.maps.LatLng(51.508742,-0.120850),
-      zoom:5,
-    };
-    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-    }
 
+    const options = {
+        method: 'GET',
+        headers: {
+            'X-RapidAPI-Host': 'trueway-places.p.rapidapi.com',
+            'X-RapidAPI-Key': 'SIGN-UP-FOR-KEY'
+        }
+    };
+    
+    fetch('https://trueway-places.p.rapidapi.com/FindPlaceByText?text=Buddha%20chillout%20rooftop%20bar%20Lumbini&language=en', options)
+        .then(response => response.json())
+        .then(response => console.log(response))
+        .catch(err => console.error(err));
 
 
