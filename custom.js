@@ -2,7 +2,7 @@
 
 
 async function callApi(){
-  const response = await fetch('https://randomuser.me/api/?results=3'); 
+  const response = await fetch('https://randomuser.me/api/?results=4'); 
   const users = await response.json();
   const userList = users.results;
   //console.log(userList); 

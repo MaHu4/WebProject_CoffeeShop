@@ -217,10 +217,18 @@ h4 {
   padding: 10px;
   margin: 50px 5px;
 }
+#team-members {
+  display: inline-flex;
+}
 
+@media screen and (max-width: 550px) {
+  #team-members {
+     display: inline-block;
+   }
+ }
 #team-members img{
-  height: 200px;
-  width: 200px; 
+  height: 100px;
+  width: 100px; 
   padding: 5px;
   margin: 10px 5px;
   border: 1px solid #005580;
@@ -229,13 +237,20 @@ h4 {
   align-items: center;
 }
 #team-members div {
-  margin: 10px 5px;
+  margin: 10px 10px;
+  padding: 5px 20px;
   color: white;
   background-color: #005580;
   border: 1px solid #005580;
   border-radius: 15% 50%;
   box-shadow: 0px 1px 9px -1px rgba(0,0,0,0.85);
 }
+@media screen and (max-width: 550px) {
+  #team-members div {
+     margin: 5px 10px;
+     padding: 5px 50px;
+   }
+ }
 
 #team-members h4 {
   padding: 0px;
@@ -253,22 +268,6 @@ h4 {
   margin: 10px;
 }
 
-
-
-.profile-header {
-  color: white !important;
-  text-align: center;
-  text-decoration: none;
-  background-color: #005580;
-  border-radius: 15px 50px;
-  box-shadow: 0px 1px 9px -1px rgba(0,0,0,0.85);
-  padding: 10px;
-  margin: 10px;
-}
-
-.profile-header > img {
-  border-radius: 15px 50px;
-}
 
 /* menu section */
 
