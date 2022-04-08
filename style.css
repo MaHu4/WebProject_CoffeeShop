@@ -1,5 +1,5 @@
 
-/* general fonts settingy */
+/* global settings */
 
 body {
   font-weight: normal;
@@ -42,6 +42,7 @@ h4 {
   font-size: 1.5 rem;
   padding: 10px 0px;
 }
+
 
 
   /* background */
@@ -210,6 +211,64 @@ h4 {
   }
 }
     
+/* team section */
+
+.team-section {
+  padding: 10px;
+  margin: 50px 5px;
+}
+
+#team-members img{
+  height: 200px;
+  width: 200px; 
+  padding: 5px;
+  margin: 10px 5px;
+  border: 1px solid #005580;
+  border-radius: 50%;
+  box-shadow: 0px 1px 9px -1px rgba(0,0,0,0.85);
+  align-items: center;
+}
+#team-members div {
+  margin: 10px 5px;
+  color: white;
+  background-color: #005580;
+  border: 1px solid #005580;
+  border-radius: 15% 50%;
+  box-shadow: 0px 1px 9px -1px rgba(0,0,0,0.85);
+}
+
+#team-members h4 {
+  padding: 0px;
+}
+
+.flag-icon {
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 30px;
+  padding: 10px;
+  margin: 10px;
+}
+
+
+
+.profile-header {
+  color: white !important;
+  text-align: center;
+  text-decoration: none;
+  background-color: #005580;
+  border-radius: 15px 50px;
+  box-shadow: 0px 1px 9px -1px rgba(0,0,0,0.85);
+  padding: 10px;
+  margin: 10px;
+}
+
+.profile-header > img {
+  border-radius: 15px 50px;
+}
 
 /* menu section */
 
