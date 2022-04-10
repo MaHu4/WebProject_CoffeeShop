@@ -1,0 +1,68 @@
+.bg-image-nad {
+  background-color: black;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3),  rgba(0, 0, 0, 0.3)), url('images/Singing bowls/bg-singngbowl1.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 100%;
+}
+body {
+    font-weight: normal;
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    height: 100%;
+    margin: 10px; 
+    display: flex;
+}
+ h1 {
+    font-family: 'Special Elite', cursive;
+    font-size: 3em;
+    font-weight: bolder;
+    font-style: normal;
+    color: white;
+    text-shadow: 2px 2px 10px black !important;
+    position: relative;
+  }
+.flip-card-container {
+  width: 300px;
+  height: 400px;
+  perspective: 1000px;
+  justify-content: center;
+  align-items: center;
+}
+.flip-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+  transform-style: preserve-3d;
+}
+.flip-card-container:hover .flip-card{
+  transform: rotateY(180deg);
+}
+.flyer-front, .flyer-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* for Safari _ to hide back-face of flyer front + back */
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+.flyer-back {
+  transform: rotateY(180deg);
+} 
+.flyer-front img {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+  
