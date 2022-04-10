@@ -1,66 +1,111 @@
 
 
 body {
-    font-weight: normal;
-    font-family: 'Merriweather', serif;
-    font-size: 20px;
-    color: white;
-    text-align: center;
-    height: 100%;
-    margin: 10px; 
-    display: flex;
-    background-color: #005580;
-    background-image: url("https://res.cloudinary.com/mahu/image/upload/c_scale,w_1000/v1649582222/Frauenloop%20-%20CoffeeShopWebsite%20/bg_singingbowl.jpg");
-    background-size:cover;
-    background-position:center center;
-    background-repeat: no-repeat;
+  font-weight: normal;
+  font-family: 'Merriweather', serif;
+  font-size: 20px;
+  color: #005580;
+  text-align: center;
+  height: 100%;
+  margin: 10px; 
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
 }
- h1 {
-    font-family: 'Special Elite', cursive;
-    font-size: 3em;
-    font-weight: bolder;
-    font-style: normal;
-    color: white;
-    text-shadow: 2px 2px 10px black !important;
-    position: relative;
+h1 {
+  font-family: 'Special Elite', cursive;
+  font-size: 50px;
+  font-weight: bolder;
+  font-style: normal;
+  color: white;
+  text-shadow: 2px 2px 10px black !important;
+  position: relative;
   }
 
-  .flip-card-container {
-    width: 300px;
-    height: 400px;
-    perspective: 1000px;
-    justify-content: center;
-    align-items: center;
+  .promo-header h2 {
+    text-align: center;
   }
-  .flip-card {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transition: 1s;
-    transform-style: preserve-3d;
+.bg-nadhome {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url("https://res.cloudinary.com/mahu/image/upload/c_scale,w_1000/v1649582222/Frauenloop%20-%20CoffeeShopWebsite%20/bg_singingbowl.jpg")
   }
-  .flip-card-container:hover .flip-card{
-    transform: rotateY(180deg);
-  }
-  .flyer-front, .flyer-back {
+.overlay {
     position: absolute;
-    width: 100%;
     height: 100%;
-    -webkit-backface-visibility: hidden; /* for Safari _ to hide back-face of flyer front + back */
-    backface-visibility: hidden;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.65);
+    color: white;
     display: flex;
-    justify-content: center;
     align-items: center;
-  } 
-  .flyer-back {
-    transform: rotateY(180deg);
-  } 
-  .flyer-front img {
-    width: 100%;
-    height: 100%;
-  }
+    justify-content: center;
+    flex-direction: column;
+}
+#countdown {
+  border: 1px solid white;
+  padding: 10px;
+}
+.nadhome-promo {
+  margin-top: 20px;
+  padding: 10px;
+  text-align: left;
+}
+.nadhome-promo h4, h2 {
+  color: #005580;
+  text-align: left;
+}
+
+/* left column */
+
+.flip-card-container {
+  width: 300px;
+  height: 400px;
+  perspective: 1000px;
+}
   
-  
-  
-  
-    
+.flip-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+  transform-style: preserve-3d;
+}
+.flip-card-container:hover .flip-card{
+  transform: rotateY(180deg);
+}
+.flyer-front, .flyer-back {
+  position: absolute;;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* for Safari _ to hide back-face of flyer front + back */
+  backface-visibility: hidden;
+} 
+.flyer-back {
+  transform: rotateY(180deg);
+} 
+.flyer-front img {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* right column */
+
+.promo-grid-container {
+  display: grid;
+  grid: auto / 350px auto;
+  grid-gap: 2px;
+  padding: 2px;
+  column-gap: 2px;
+  row-gap: 2px;
+}
+
+.promo-grid-container img {
+  border: 1px solid #005580;
+}
