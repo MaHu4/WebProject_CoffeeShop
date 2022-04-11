@@ -23,6 +23,9 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
+
+// RANDOM USER GENERATOR FOR TEAM-SECTION
+
 async function callApi(){
   const response = await fetch('https://randomuser.me/api/?results=4'); 
   const users = await response.json();
