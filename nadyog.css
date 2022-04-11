@@ -8,8 +8,10 @@ body {
   text-align: center;
   height: 100%;
   margin: 10px; 
-  display: flex;
   background-color: white;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -61,14 +63,15 @@ h1 {
   text-align: left;
 }
 
-/* left column */
+/* left column FLIP CARD Effect */
+/* source code example : https://www.youtube.com/watch?v=Lc6wyl1KdOc */
+
 
 .flip-card-container {
-  width: 300px;
-  height: 400px;
+  width: 500px;
+  height: 600px;
   perspective: 1000px;
 }
-  
 .flip-card {
   position: relative;
   width: 100%;
@@ -77,16 +80,25 @@ h1 {
   transform-style: preserve-3d;
 }
 .flip-card-container:hover .flip-card{
-  transform: rotateY(180deg);
+  transform: rotateY(180deg); /*rotate on Y achse*/
 }
 .flyer-front, .flyer-back {
-  position: absolute;;
+  position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden; /* for Safari _ to hide back-face of flyer front + back */
+  -webkit-backface-visibility: hidden; /* for Safari - to hide back-face of flyer front + back */
   backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 } 
+.flyer-front {
+  background-color:#005580;
+  color: #fff;
+}
 .flyer-back {
+  background-color: #A57C53;
+  color: #fff;
   transform: rotateY(180deg);
 } 
 .flyer-front img {
@@ -94,18 +106,32 @@ h1 {
   height: 100%;
 }
 
+/* right column - Image Comparison Slider*/
 
-/* right column */
-
-.promo-grid-container {
-  display: grid;
-  grid: auto / 350px auto;
-  grid-gap: 2px;
-  padding: 2px;
-  column-gap: 2px;
-  row-gap: 2px;
+.img-comp-container {
+  position: relative;
+ height: 707px;
+}
+.img-comp-img {
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+.img-comp-img img {
+  display: block;
+  vertical-align: middle;
 }
 
-.promo-grid-container img {
-  border: 1px solid #005580;
+/*this class is used in JS */
+.img-comp-slider {
+  position: absolute;
+  z-index: 9;
+  cursor: ew-resize;
+  /*set the appearance of the slider:*/
+  width: 40px;
+  height: 40px;
+  background-color: #75ABF4;
+  opacity: 0.7;
+  border-radius: 50%;
 }
