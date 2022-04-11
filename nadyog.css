@@ -11,7 +11,7 @@ body {
   background-color: white;
   width: 100vw;
   height: 100vh;
-  display: flex;
+  display: contents;
   justify-content: center;
   align-items: center;
 }
@@ -24,16 +24,29 @@ h1 {
   text-shadow: 2px 2px 10px black !important;
   position: relative;
   }
+  @media screen and (max-width: 400px) {
+    h1 {
+      font-size: 25px;
+    }
+  }
 
-  .promo-header h2 {
+/* FIRST PART IMAGE */
+
+.promo-header h2 {
     text-align: center;
   }
+@media screen and (max-width: 400px) {
+  h2 {
+    font-size: 20px;
+  }
+}
 .bg-nadhome {
-  height: 100vh;
-  width: 100vw;
+  min-height: 100vh;
+  min-width: 100vw;
   position: relative;
   background-size: cover;
-  background-position: 50% 50%;
+  background-position: center center;
+  background-repeat: no-repeat;
   background-image: url("https://res.cloudinary.com/mahu/image/upload/c_scale,w_1000/v1649582222/Frauenloop%20-%20CoffeeShopWebsite%20/bg_singingbowl.jpg")
   }
 .overlay {
@@ -53,6 +66,55 @@ h1 {
   border: 1px solid white;
   padding: 10px;
 }
+@media screen and (max-width: 400px) {
+  #countdown {
+    padding: 5px;
+  }
+}
+
+/* ANIMATED ARROWS */
+
+.arrowbox {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.arrowbox span {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-bottom: 2px solid white;
+  border-right: 1px solid white;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
+}
+.arrowbox span:nth-child(2) {
+  animation-delay: .2s;
+  transform: rotate(45deg) translate(-20px, -20px); 
+}
+.arrowbox span:nth-child(3) {
+  animation-delay: .4s;
+}
+@keyframes animate {
+  0% 
+  {
+  opacity: 0;
+  transform: rotate(45deg) translate(-10px, -10px);
+  }
+  50% 
+  {
+  opacity: 1;
+  }
+  100%{
+  opacity: 0 ;
+  transform: rotate(45deg) translate(10px, 10px);
+  }
+}
+
+/* SECOND PART UNDER THE IMAGE */
+
 .nadhome-promo {
   margin-top: 20px;
   padding: 10px;
@@ -62,14 +124,22 @@ h1 {
   color: #005580;
   text-align: left;
 }
+@media screen and (max-width: 400px) {
+  .nadhome-promo h4   {
+    font-size: 16px;
+  }
+}
+.column-left, column-right {
+  margin-top: 20px;
+}
 
 /* left column FLIP CARD Effect */
 /* source code example : https://www.youtube.com/watch?v=Lc6wyl1KdOc */
 
 
 .flip-card-container {
-  width: 500px;
-  height: 707px;
+  max-width: 500px;
+  max-height: 707px;
   perspective: 1000px;
 }
 .flip-card {
@@ -106,32 +176,45 @@ h1 {
   height: 100%;
 }
 
-/* right column - Image Comparison Slider*/
+/* right column - Image Comparison Slider */
+/* code example from w3schools: see nadyog.js */
 
 .img-comp-container {
   position: relative;
- height: 707px;
+  max-width: 500px;
+  max-height: 707px;
+}
+@media screen and (max-width: 400px) {
+  .img-comp-container  {
+  max-width: 390px;
+  max-height: 566px;
+  }
 }
 .img-comp-img {
   position: absolute;
-  width: auto;
-  height: auto;
+  max-width: 500px;
+  max-height: 707px;
   overflow: hidden;
 }
-.img-comp-img img {
-  display: block;
-  vertical-align: middle;
+@media screen and (max-width: 400px) {
+  .img-comp-img  {
+    max-width: 390px;
+    max-height: 566px;
+  }
 }
 
-/*this class is used in JS */
-.img-comp-slider {
+.img-comp-img img {
+  display: block;
+}
+
+.img-comp-slider { /*this class is used in JS */
   position: absolute;
   z-index: 9;
   cursor: ew-resize;
   /*set the appearance of the slider:*/
   width: 40px;
   height: 40px;
-  background-color: #75ABF4;
+  background-color: #3B2D2A; /*color changed in comp. to w3s */
   opacity: 0.7;
   border-radius: 50%;
 }

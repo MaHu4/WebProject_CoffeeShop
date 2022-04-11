@@ -2,7 +2,7 @@
 // code example from : https://adaptabiz.com/how-to-create-a-coming-soon-page-maintenance-page-using-html-css-and-javascript/
 
 // Set the date we're counting down to
-var countDownDate = new Date("July, 2022 00:00:00").getTime();
+var countDownDate = new Date("June, 2022 00:00:00").getTime();
 
 // Update the count down every 1 second
 var countdownfunction = setInterval(function() {
@@ -48,14 +48,14 @@ function initComparisons() {
     /* Get the width and height of the img element */
     w = img.offsetWidth;
     h = img.offsetHeight;
-    /* Set the width of the img element to 50%: */
+    /* Set the width of the front-img 50%: */
     img.style.width = (w / 2) + "px";
     /* Create slider: */
     slider = document.createElement("DIV");
     slider.setAttribute("class", "img-comp-slider");
     /* Insert slider */
     img.parentElement.insertBefore(slider, img);
-    /* Position the slider in the middle: */
+    /* Position the slider to middle */
     slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
     slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
     /* Execute a function when the mouse button is pressed: */
