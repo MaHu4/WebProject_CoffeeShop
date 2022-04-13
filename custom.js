@@ -1,6 +1,13 @@
 
+//LazyLoad
 
+var lazyLoadInstance = new LazyLoad({
+  // Your custom settings go here
+});
+  
+  
   // BACK TO TOP BUTTON
+
   // code example: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
 
 //Get the button:
@@ -68,6 +75,7 @@ div.appendChild(person);
 }
 
 callApi()
+
 
 
 // CONTACT FIELD
