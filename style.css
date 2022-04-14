@@ -64,6 +64,38 @@ h4 {
    }
  }
 
+ /* navbar button and go to top button and placeholders in Contact fuield :
+ Text meant only for screen readers. */
+
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
+}
+.screen-reader-text:focus {
+  background-color: #eee;
+  clip: auto !important;
+  clip-path: none;
+  color: #444;
+  display: block;
+  font-size: 1em;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000; /* Above WP toolbar. */
+}
+
   /* BACK TO TOP BUTTON */
   /*  code example: custom.js */
 
@@ -183,37 +215,6 @@ h4 {
   }
 }
 
-/* navbar button and go to top button :
- Text meant only for screen readers. */
-
-.screen-reader-text {
-  border: 0;
-  clip: rect(1px, 1px, 1px, 1px);
-  clip-path: inset(50%);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-  word-wrap: normal !important;
-}
-.screen-reader-text:focus {
-  background-color: #eee;
-  clip: auto !important;
-  clip-path: none;
-  color: #444;
-  display: block;
-  font-size: 1em;
-  height: auto;
-  left: 5px;
-  line-height: normal;
-  padding: 15px 23px 14px;
-  text-decoration: none;
-  top: 5px;
-  width: auto;
-  z-index: 100000; /* Above WP toolbar. */
-}
 
 
 /* HOME */
@@ -260,10 +261,25 @@ h4 {
   padding: 10px;
   margin: 50px 5px;
 }
-.about-section p {
-  text-align: justify;
+
+.p-justified-right p {
+text-align: right;
+padding: 5px;
+}
+.p-justified-left p {
+  text-align: left;
   padding: 5px;
+  }
+
+@media screen and (max-width: 360px) {
+  .p-justified-right p {
+    text-align: justify;
+  }
+  .p-justified-left p {
+    text-align: justify;
+  }
  }
+
 .about-img1 {
   min-width: 30%;
   height: auto;
