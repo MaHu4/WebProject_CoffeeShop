@@ -183,7 +183,9 @@ h4 {
   }
 }
 
-/* navbar button and go to top button : Text meant only for screen readers. */
+/* navbar button and go to top button :
+ Text meant only for screen readers. */
+
 .screen-reader-text {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);

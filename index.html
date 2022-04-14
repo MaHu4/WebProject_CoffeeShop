@@ -459,21 +459,26 @@
           <div class="contact-field">
             <label for="exampleFormControlInput1" class="form-label">.your name<sup>*</sup></label>
             <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="enter name">
+            <span class="screen-reader-text">enter your name in this field</span>
           </div>
           <div class="contact-field">
             <label for="exampleFormControlInput1" class="form-label">.your last name</label>
             <input type="lasname" class="form-control" id="exampleFormControlInput2" placeholder="enter last name">
+            <span class="screen-reader-text">enter your surname in this field</span>
           </div>
           <div class="contact-field">
             <label for="exampleFormControlInput1" class="form-label">.your email<sup>*</sup></label>
             <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="enter email address">
+            <span class="screen-reader-text">enter your email address in this field</span>
           </div>
           <div class="contact-field">
             <label for="exampleFormControlTextarea1" class="form-label">.your message</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="enter message to us" rows="8"></textarea>
+            <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="enter message to us" rows="8">
+              <span class="screen-reader-text">enter your message in this field</span>
+            </textarea>
           </div>
          
-        <div id="submitButton" class="d-grid gap-2 justify-content-center contact-field">
+        <div id="submitButton" class="d-grid gap-2 justify-content-center contact-field"><span class="screen-reader-text">Click button to submit message</span>
             <input id=btn-style class="btn btn-primary" type="submit" value=".submit">
           </div> 
         </div>
